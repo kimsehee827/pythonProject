@@ -1,16 +1,10 @@
-# This is a sample Python script.
+n = int(input("얼마를 거슬러 주어야 하나요?: "))
+count = 0
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+list = [500, 100, 50 ,10]
 
+for coin in list:
+    count += n // coin
+    n %= coin
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(count)
